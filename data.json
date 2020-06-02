@@ -1,0 +1,34 @@
+{
+    "classes": [
+        {
+            "name": "mon11b",
+            "short": "m11b",
+            "classNum": 8993,
+            "duration": "Monday 11:00am - 2:00pm",
+            "assistant": "Dong Huang",
+            "tutorials": [
+                {
+                    "week": 1,
+                    "files": [
+                        "hello.c"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "thu11b",
+            "short": "h11b",
+            "classNum": 8987,
+            "duration": "Thursday 11:00am - 2:00pm",
+            "assistant": "Grace Liu",
+            "tutorials": [
+                {
+                    "week": 1,
+                    "files": [
+                        "hello.c"
+                    ]
+                }
+            ]
+        }
+    ]
+}
