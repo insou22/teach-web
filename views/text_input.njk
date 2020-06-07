@@ -1,0 +1,10 @@
+{# Inputs: text_name, text_display, text_width? #}
+{% if not text_width %}
+    {% set text_width = '100%' %}
+{% endif %}
+<label for="{{ text_name }}">{{ text_display }}</label>
+<input name="{{ text_name }}" class="form-control" style="width: {{ text_width }}"></input>
+
+{% set text_name = undefined %}
+{% set text_display = undefined %}
+{% set text_width = undefined %}

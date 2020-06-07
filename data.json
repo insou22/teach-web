@@ -6,12 +6,24 @@
             "classNum": 8993,
             "duration": "Monday 11:00am - 2:00pm",
             "assistant": "Dong Huang",
+            "assistant_short": "Dong",
             "tutorials": [
                 {
                     "week": 1,
+                    "topic": "No content!",
+                    "complete": true,
                     "files": [
-                        "hello.c"
+                        {
+                            "name": "hello.c",
+                            "description": "A placeholder file for testing"
+                        }
                     ]
+                },
+                {
+                    "week": 2,
+                    "topic": "Bitwise Operations",
+                    "complete": false,
+                    "files": []
                 }
             ]
         },
@@ -21,12 +33,24 @@
             "classNum": 8987,
             "duration": "Thursday 11:00am - 2:00pm",
             "assistant": "Grace Liu",
+            "assistant_short": "Grace",
             "tutorials": [
                 {
                     "week": 1,
+                    "topic": "No content!",
+                    "complete": true,
                     "files": [
-                        "hello.c"
+                        {
+                            "name": "hello.c",
+                            "description": "A placeholder file for testing"
+                        }
                     ]
+                },
+                {
+                    "week": 2,
+                    "topic": "Bitwise Operations",
+                    "complete": false,
+                    "files": []
                 }
             ]
         }

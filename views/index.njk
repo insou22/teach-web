@@ -12,7 +12,7 @@
 
 <div class="container">
   <div class="card-deck mb-3 text-center">
-  {% for class in data.classes %}
+    {% for class in data.classes %}
     <div class="card mb-4 shadow-sm">
       <div class="card-header">
         <h4 class="my-0 font-weight-normal">{{ class.name }}</h4>
@@ -23,64 +23,14 @@
           <li>{{ class.enrolment.current }} / {{ class.enrolment.max }} currently enrolled</li>
           <li>Assistant: {{ class.assistant }}</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Go!</button>
+        <button type="button" class="btn btn-lg btn-block btn-primary" onclick="location.href='/{{ class.name }}'">Go!</button>
       </div>
     </div>
-  {% endfor %}
-    
-    {#<div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">thu11b</h4>
-      </div>
-      <div class="card-body">
-        <h3 class="card-title class-card-title">Thursday 11:00am - 2:00pm</h3>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>20 users included</li>
-          <li>10 GB of storage</li>
-          <li>Priority email support</li>
-          <li>Help center access</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Go!</button>
-      </div>
-    </div>#}
+    {% endfor %}
   </div>
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      {#<div class="col-12 col-md">
-        <img class="mb-2" src="../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-        <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-          <li><a class="text-muted" href="#">Random feature</a></li>
-          <li><a class="text-muted" href="#">Team feature</a></li>
-          <li><a class="text-muted" href="#">Stuff for developers</a></li>
-          <li><a class="text-muted" href="#">Another one</a></li>
-          <li><a class="text-muted" href="#">Last time</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Resource</a></li>
-          <li><a class="text-muted" href="#">Resource name</a></li>
-          <li><a class="text-muted" href="#">Another resource</a></li>
-          <li><a class="text-muted" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
-        </ul>
-      </div>#}
-    </div>
+    <div class="row"></div>
   </footer>
 </div>
 {% endblock %}

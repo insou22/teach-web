@@ -1,0 +1,52 @@
+{% extends "base.njk" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/class.css">
+{% endblock %}
+
+{% block content %}
+<div class="title-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-5">{{ name }} - With Zac and {{ assistant_short }}</h1>
+</div>
+
+<div class="container">
+
+  {% for tute in tutorials %}
+  <div class="card mt-4">
+    <div class="card-header">
+      Week {{ tute.week }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Topic: {{ tute.topic }}</h5>
+
+      {% if tute.files.length %}
+      <p class="card-text">Files worked on during tute:</p>
+      <ul class="list-group mb-4">
+        {% for file in tute.files %}
+          <li class="list-group-item">
+            <a href="/classdata/{{ name }}/tutorials/{{ tute.week }}/{{ file.name }}" target="_blank">{{ file.name }}</a>
+            {% set sep_width = '3px' %}
+            {% include 'separate.njk' %}
+            <span>-</span>
+            {% include 'separate.njk' %}
+            <span>{{ file.description }}</span>
+          </li>
+        {% endfor %}
+      {% else %}
+      <p class="card-text">No files uploaded yet!</p>
+      {% endif %}
+      </ul>
+      
+      {% if tute.complete %}
+      <a href="/{{ name }}/feedback/{{ tute.week }}" class="btn btn-primary">Give feedback!</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+    </div>
+  </footer>
+</div>
+{% endblock %}

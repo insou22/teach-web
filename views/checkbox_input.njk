@@ -1,0 +1,10 @@
+{# Inputs: check_name, check_display #}
+
+{% set sep_width = '3px' %}
+{% include 'separate.njk' %}
+
+<input class="form-check-input checkbox pull-right" type="checkbox" name="{{ check_name }}" id="{{ check_name }}">
+<label for="{{ check_name }}">{{ check_display }}</label>
+
+{% set check_name = undefined %}
+{% set check_display = undefined %}

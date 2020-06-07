@@ -1,0 +1,25 @@
+{% extends "base.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/feedback.css">
+{% endblock %}
+
+{% block content %}
+<div class="title-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-5">Feedback for {{ class.name }}, week {{ tute.week }}</h1>
+</div>
+
+<div class="container">
+    <p class="text-center">Thanks for submitting your feedback! I will read it and take it into consideration for next tutorial.</p>
+    <div class="text-center">
+        <a href="/{{ class.name }}" class="btn btn-primary">Back to class page</a>
+    </div>
+</div>
+
+<div class="container">
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row"></div>
+  </footer>
+</div>
+
+{% endblock %}

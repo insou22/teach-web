@@ -1,0 +1,4 @@
+feedback/*
+!feedback/README.md
+
+node_modules
