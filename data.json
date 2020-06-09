@@ -31,6 +31,10 @@
                         {
                             "name": "numbers.c",
                             "description": "Code for doing bitwise operations and changing bases in C"
+                        },
+                        {
+                            "name": "sixteen_in.c",
+                            "description": "Some thoughts for getting started on sixteen_in.c"
                         }
                     ]
                 }
