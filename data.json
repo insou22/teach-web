@@ -27,6 +27,10 @@
                         {
                             "name": "agenda.md",
                             "description": "The agenda for the tutorial"
+                        },
+                        {
+                            "name": "numbers.c",
+                            "description": "Code for doing bitwise operations and changing bases in C"
                         }
                     ]
                 }
