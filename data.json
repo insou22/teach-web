@@ -67,6 +67,14 @@
                         {
                             "name": "agenda.md",
                             "description": "The agenda for the tutorial"
+                        },
+                        {
+                            "name": "bits.c",
+                            "description": "Looking at working with individual bits"
+                        },
+                        {
+                            "name": "masks.c",
+                            "description": "Working with bitmasks - tut question 4"
                         }
                     ]
                 }
