@@ -62,7 +62,7 @@
                 {
                     "week": 2,
                     "topic": "Bitwise Operations",
-                    "complete": false,
+                    "complete": true,
                     "files": [
                         {
                             "name": "agenda.md",
