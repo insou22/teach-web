@@ -1,3 +1,17 @@
 .slider {
     width: 100%;
 }
+
+.checkbox--container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox--box, .checkbox--label {
+    position: relative;
+    margin: 0;
+}
+
+.checkbox--box {
+    margin-right: .3rem;
+}
