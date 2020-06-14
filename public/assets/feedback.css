@@ -13,5 +13,9 @@
 }
 
 .checkbox--box {
-    margin-right: .3rem;
+    margin-right: .5rem;
+}
+
+.checkbox--label {
+    user-select: none;
 }
