@@ -96,6 +96,12 @@
                             "description": "Working with bitmasks - tut question 4"
                         }
                     ]
+                },
+                {
+                    "week": 3,
+                    "topic": "Floating Points (IEEE-754)",
+                    "complete": false,
+                    "files": []
                 }
             ]
         }
