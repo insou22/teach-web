@@ -37,6 +37,25 @@
                             "description": "Some thoughts for getting started on sixteen_in.c"
                         }
                     ]
+                },
+                {
+                    "week": 3,
+                    "topic": "Floating Points (IEEE-754)",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "negative.c",
+                            "description": "Playing around with two's complement numbers"
+                        },
+                        {
+                            "name": "six_middle_bits.c",
+                            "description": "Extracting the six middle bits from a number"
+                        },
+                        {
+                            "name": "union.c",
+                            "description": "Differences between unions and structs"
+                        }
+                    ]
                 }
             ]
         },
