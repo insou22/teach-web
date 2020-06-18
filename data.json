@@ -100,8 +100,21 @@
                 {
                     "week": 3,
                     "topic": "Floating Points (IEEE-754)",
-                    "complete": false,
-                    "files": []
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "twoscomplement.c",
+                            "description": "Playing around with two's complement numbers"
+                        },
+                        {
+                            "name": "union.c",
+                            "description": "Differences between unions and structs"
+                        },
+                        {
+                            "name": "six_middle_bits.c",
+                            "description": "Extracting the six middle bits from a number"
+                        }
+                    ]
                 }
             ]
         }
