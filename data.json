@@ -79,7 +79,7 @@
                             "description": "Tell whether a number is small, medium, or large in MIPS"
                         },
                         {
-                            "name": "resources",
+                            "name": "resources.txt",
                             "description": "Lots of URLs to various MIPS resources"
                         }
                     ]
