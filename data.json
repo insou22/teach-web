@@ -56,6 +56,29 @@
                             "description": "Differences between unions and structs"
                         }
                     ]
+                },
+                {
+                    "week": 4,
+                    "topic": "Basic MIPS",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "squared.c",
+                            "description": "Square a given number in C"
+                        },
+                        {
+                            "name": "squared.s",
+                            "description": "Square a given number in MIPS"
+                        },
+                        {
+                            "name": "size.c",
+                            "description": "Tell whether a number is small, medium, or large in C"
+                        },
+                        {
+                            "name": "size.s",
+                            "description": "Tell whether a number is small, medium, or large in MIPS"
+                        }
+                    ]
                 }
             ]
         },
