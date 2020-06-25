@@ -142,6 +142,33 @@
                             "description": "Extracting the six middle bits from a number"
                         }
                     ]
+                },
+                {
+                    "week": 4,
+                    "topic": "Basic MIPS",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "squared.c",
+                            "description": "Square a given number in C"
+                        },
+                        {
+                            "name": "squared.s",
+                            "description": "Square a given number in MIPS"
+                        },
+                        {
+                            "name": "big_small.c",
+                            "description": "Tell whether a number is small, medium, or large in C"
+                        },
+                        {
+                            "name": "big_small.s",
+                            "description": "Tell whether a number is small, medium, or large in MIPS"
+                        },
+                        {
+                            "name": "resources.txt",
+                            "description": "Lots of URLs to various MIPS resources"
+                        }
+                    ]
                 }
             ]
         }
