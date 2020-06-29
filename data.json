@@ -83,6 +83,25 @@
                             "description": "Lots of URLs to various MIPS resources"
                         }
                     ]
+                },
+                {
+                    "week": 5,
+                    "topic": "More on MIPS",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "q1_2.pdf",
+                            "description": "Document covering q1 and q2 in tute (and a bit of endianness in q3)"
+                        },
+                        {
+                            "name": "numbers.s",
+                            "description": "Arrays and loops in MIPS"
+                        },
+                        {
+                            "name": "numbers_42.s",
+                            "description": "More advanced arrays / looping in MIPS"
+                        }
+                    ]
                 }
             ]
         },
