@@ -188,6 +188,21 @@
                             "description": "Lots of URLs to various MIPS resources"
                         }
                     ]
+                },
+                {
+                    "week": 5,
+                    "topic": "More on MIPS",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "q1_3.pdf",
+                            "description": "Document covering q1 and q3 in tute"
+                        },
+                        {
+                            "name": "fib.s",
+                            "description": "Fibonacci with stack frames in MIPS"
+                        }
+                    ]
                 }
             ]
         }
