@@ -102,6 +102,21 @@
                             "description": "More advanced arrays / looping in MIPS"
                         }
                     ]
+                },
+                {
+                    "week": 7,
+                    "topic": "Advanced MIPS",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "fib.c",
+                            "description": "A simplified C program to calculate the n'th number in the fibonacci sequence."
+                        },
+                        {
+                            "name": "fib.s",
+                            "description": "A translation of fib.c to MIPS, with stackframes."
+                        }
+                    ]
                 }
             ]
         },
