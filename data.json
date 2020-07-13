@@ -115,6 +115,22 @@
                         {
                             "name": "fib.s",
                             "description": "A translation of fib.c to MIPS, with stackframes."
+                        },
+                        {
+                            "name": "flag.c",
+                            "description": "A C program to print a flag."
+                        },
+                        {
+                            "name": "flag_1d.c",
+                            "description": "flag.c -- 2D array changed to 1D."
+                        },
+                        {
+                            "name": "flag_1d_simple.c",
+                            "description": "flag_1d.c -- for loops simplified into if/goto."
+                        },
+                        {
+                            "name": "flag.s",
+                            "description": "flag.c translated into MIPS (using flag_1d_simple.c)."
                         }
                     ]
                 }
