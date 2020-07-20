@@ -133,6 +133,29 @@
                             "description": "flag.c translated into MIPS (using flag_1d_simple.c)."
                         }
                     ]
+                },
+                {
+                    "week": 8,
+                    "topic": "Files in C",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "first_line.c",
+                            "description": "A C program to read the first line of a file."
+                        },
+                        {
+                            "name": "append_line.c",
+                            "description": "A C program to append an inputted line to a file."
+                        },
+                        {
+                            "name": "fopen_to_read.txt",
+                            "description": "Changing fopen calls to open calls."
+                        },
+                        {
+                            "name": "lseek.txt",
+                            "description": "Playing around with lseek."
+                        }
+                    ]
                 }
             ]
         },
