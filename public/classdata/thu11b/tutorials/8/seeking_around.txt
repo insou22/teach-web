@@ -1,0 +1,32 @@
+cursor = 0
+
+
+lseek(fd, 0, SEEK_END);
+
+cursor = 10000
+
+
+lseek(fd, -1000, SEEK_CUR);
+
+cursor = 9000
+
+
+lseek(fd, 0, SEEK_SET);
+
+cursor = 0
+
+
+lseek(fd, -100, SEEK_SET); // error - trying to go before beginning of file
+
+cursor = 0
+
+
+lseek(fd, 1000, SEEK_SET);
+
+cursor = 1000
+
+
+lseek(fd, 1000, SEEK_CUR);
+
+cursor = 2000
+
