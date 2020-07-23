@@ -257,6 +257,41 @@
                             "description": "Fibonacci with stack frames in MIPS"
                         }
                     ]
+                },
+                {
+                    "week": 8,
+                    "topic": "Files in C",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "files.c",
+                            "description": "A C program to read a file 4 bytes at a time (with open / read)."
+                        },
+                        {
+                            "name": "first_line.c",
+                            "description": "A C program to read the first line of a file (with fopen / fgetc)."
+                        },
+                        {
+                            "name": "write_line.c",
+                            "description": "A C program to write an inputted line to a file."
+                        },
+                        {
+                            "name": "seeking_around.txt",
+                            "description": "Playing around with lseek."
+                        },
+                        {
+                            "name": "strange_print.c",
+                            "description": "Testing printing with ASCII values."
+                        },
+                        {
+                            "name": "unique_fp.c",
+                            "description": "Testing if two fopen's give unique file descriptors."
+                        },
+                        {
+                            "name": "dodgy.c",
+                            "description": "Very dodgily finding the file descriptor inside a FILE * struct (use gcc)."
+                        }
+                    ]
                 }
             ]
         }
