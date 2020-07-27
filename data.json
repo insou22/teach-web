@@ -156,6 +156,12 @@
                             "description": "Playing around with lseek."
                         }
                     ]
+                },
+                {
+                    "week": 9,
+                    "topic": "Asst2 + UNIX File System + Stat",
+                    "complete": true,
+                    "files": []
                 }
             ]
         },
