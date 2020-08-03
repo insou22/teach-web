@@ -1,0 +1,73 @@
+access page 5 (t = 0)
+
+PAGE FAULT
+page 5 -> frame 0; t = 0
+
+
+access page 3 (t = 1)
+
+PAGE FAULT
+page 5 -> frame 0; t = 0
+page 3 -> frame 1; t = 1
+
+
+access page 5 (t = 2)
+page 5 -> frame 0; t = 2
+page 3 -> frame 1; t = 1
+
+
+access page 3 (t = 3)
+page 5 -> frame 0; t = 2
+page 3 -> frame 1; t = 3
+
+
+access page 0 (t = 4)
+
+PAGE FAULT
+page 5 -> frame 0; t = 2
+page 3 -> frame 1; t = 3
+page 0 -> frame 2; t = 4
+
+
+access page 1 (t = 5)
+
+PAGE FAULT
+page 5 -> frame 0; t = 2
+page 3 -> frame 1; t = 3
+page 0 -> frame 2; t = 4
+page 1 -> frame 3; t = 5
+
+
+access page 2 (t = 6)
+
+PAGE FAULT
+page 2 -> frame 0; t = 6
+page 3 -> frame 1; t = 3
+page 0 -> frame 2; t = 4
+page 1 -> frame 3; t = 5
+
+
+access page 2 (t = 7)
+
+page 2 -> frame 0; t = 7
+page 3 -> frame 1; t = 3
+page 0 -> frame 2; t = 4
+page 1 -> frame 3; t = 5
+
+
+access page 3 (t = 8)
+
+page 2 -> frame 0; t = 7
+page 3 -> frame 1; t = 8
+page 0 -> frame 2; t = 4
+page 1 -> frame 3; t = 5
+
+
+access page 5 (t = 9)
+
+PAGE FAULT
+page 2 -> frame 0; t = 7
+page 3 -> frame 1; t = 8
+page 5 -> frame 2; t = 9
+page 1 -> frame 3; t = 5
+

@@ -162,6 +162,33 @@
                     "topic": "Asst2 + UNIX File System + Stat",
                     "complete": true,
                     "files": []
+                },
+                {
+                    "week": 10,
+                    "topic": "Virtual memory + Environment variables",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "print_diary.c",
+                            "description": "Use the $HOME environment variable to print the contents of $HOME/.diary"
+                        },
+                        {
+                            "name": "print_file_bits.c",
+                            "description": "Print the least significant byte for files in asst2 hex format"
+                        },
+                        {
+                            "name": "42.hex",
+                            "description": "Test hex file for print_file_bits.c"
+                        },
+                        {
+                            "name": "how_much_mem.c",
+                            "description": "Printing the address of a value on the stack to see roughly how much virtual memory is available."
+                        },
+                        {
+                            "name": "q4.txt",
+                            "description": "Question 4 of the tutorial - simulating LRU page replacement by hand"
+                        }
+                    ]
                 }
             ]
         },
