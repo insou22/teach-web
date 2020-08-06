@@ -1,0 +1,104 @@
+Frame 0: None
+Frame 1: None
+Frame 2: None
+Frame 3: None
+
+
+t = 0: Virtual page 5 accessed:
+-- PAGE FAULT --
+Allocate Frame 0 for page 5
+
+Frame 0: page 5 (t=0)
+Frame 1: None
+Frame 2: None
+Frame 3: None
+
+
+t = 1: Virtual page 3 accessed:
+-- PAGE FAULT --
+Allocate Frame 1 for page 3
+
+Frame 0: page 5 (t=0)
+Frame 1: page 3 (t=1)
+Frame 2: None
+Frame 3: None
+
+
+t = 2: Virtual page 5 accessed:
+Frame 0 already allocated
+
+Frame 0: page 5 (t=2)
+Frame 1: page 3 (t=1)
+Frame 2: None
+Frame 3: None
+
+
+t = 3: Virtual page 3 accessed:
+Frame 1 already allocated
+
+Frame 0: page 5 (t=2)
+Frame 1: page 3 (t=3)
+Frame 2: None
+Frame 3: None
+
+
+t = 4: Virtual page 0 accessed:
+-- PAGE FAULT --
+Allocate Frame 2 for page 0
+
+Frame 0: page 5 (t=2)
+Frame 1: page 3 (t=3)
+Frame 2: page 0 (t=4)
+Frame 3: None
+
+
+t = 5: Virtual page 1 accessed:
+-- PAGE FAULT --
+Allocate Frame 3 for page 1
+
+Frame 0: page 5 (t=2)
+Frame 1: page 3 (t=3)
+Frame 2: page 0 (t=4)
+Frame 3: page 1 (t=5)
+
+
+t = 6: Virtual page 2 accessed:
+-- PAGE FAULT --
+Physical memory full! Evict Frame 0 (with page 5) as it is Least Recently Used (LRU).
+Allocate Frame 0 for page 2
+
+Frame 0: page 2 (t=6)
+Frame 1: page 3 (t=3)
+Frame 2: page 0 (t=4)
+Frame 3: page 1 (t=5)
+
+
+t = 7: Virtual page 2 accessed:
+Frame 0 already allocated
+
+Frame 0: page 2 (t=7)
+Frame 1: page 3 (t=3)
+Frame 2: page 0 (t=4)
+Frame 3: page 1 (t=5)
+
+
+t = 8: Virtual page 3 accessed:
+Frame 1 already allocated
+
+Frame 0: page 2 (t=7)
+Frame 1: page 3 (t=8)
+Frame 2: page 0 (t=4)
+Frame 3: page 1 (t=5)
+
+
+t = 9: Virtual page 5 accessed:
+-- PAGE FAULT --
+Physical memory full! Evict Frame 2 (with page 0) as it is Least Recently Used (LRU).
+Allocate Frame 2 for page 5
+
+Frame 0: page 2 (t=7)
+Frame 1: page 3 (t=8)
+Frame 2: page 5 (t=9)
+Frame 3: page 1 (t=5)
+
+

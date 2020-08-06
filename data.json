@@ -325,6 +325,33 @@
                             "description": "Very dodgily finding the file descriptor inside a FILE * struct (use gcc)."
                         }
                     ]
+                },
+                {
+                    "week": 10,
+                    "topic": "Virtual memory + Environment variables",
+                    "complete": true,
+                    "files": [
+                        {
+                            "name": "print_diary.c",
+                            "description": "Use the $HOME environment variable to print the contents of $HOME/.diary"
+                        },
+                        {
+                            "name": "print_file_bits.c",
+                            "description": "Print the least significant byte for files in asst2 hex format"
+                        },
+                        {
+                            "name": "triangle.hex",
+                            "description": "Test hex file for print_file_bits.c"
+                        },
+                        {
+                            "name": "estimate_vaddr_space.c",
+                            "description": "Printing the address of a value on the stack to estimate how much virtual memory is available."
+                        },
+                        {
+                            "name": "access_lru.txt",
+                            "description": "Question 4 of the tutorial - simulating LRU page replacement by hand"
+                        }
+                    ]
                 }
             ]
         }
