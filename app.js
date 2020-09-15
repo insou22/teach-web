@@ -26,51 +26,67 @@ app.get('/', async (req, res) => {
         data
     };
 
-    for (const clazz of data.classes) {
-        const cap = await capacity.getCapacity(clazz.classNum);
-        
-        clazz['enrolment'] = cap;
+    for (const session of data.sessions) {
+        if (session.year == new Date().getFullYear() % 100) {
+            for (const clazz of session.classes) {
+                const cap = await capacity.getCapacity(session.term, clazz.classNum);
+
+                clazz['enrolment'] = cap;
+            }
+        }
     }
 
     return res.render('index.njk', templateData);
 });
 
-data.classes.forEach((clazz) => {
-    app.get(`/${clazz.name}`, async (req, res) => {
-        return res.render('class.njk', clazz);
+data.sessions.forEach((session) => {
+    const sessionName = `${session.year}T${session.term}`;
+
+    app.get(`/${sessionName}`, async (req, res) => {
+        return res.render('session.njk', session);
     });
 
-    clazz.tutorials.forEach((tute) => {
-        const endpoint = `/${clazz.name}/feedback/${tute.week}`;
-
-        app.get(endpoint, async (req, res) => {
-            return res.render('feedback.njk', {
-                data,
+    session.classes.forEach((clazz) => {
+        app.get(`/${sessionName}/${clazz.name}`, async (req, res) => {
+            return res.render('class.njk', {
                 class: clazz,
-                tute
+                session: sessionName
             });
         });
 
-        app.post(endpoint, async (req, res) => {
-            req.body.share = req.body.share === 'on';
+        clazz.tutorials.forEach((tute) => {
+            const endpoint = `/${sessionName}/${clazz.name}/feedback/${tute.week}`;
 
-            const date = new Date().toISOString()
-                .replace(/T/, '_')
-                .replace(/\..+/, '');
-
-            const name = `${clazz.name}.${tute.week}-${date}`;
-
-            fs.writeFile(`./feedback/${name}.json`, JSON.stringify(req.body, null, 4), () => {
-                console.log(`Received new feedback at ${date}`);
+            app.get(endpoint, async (req, res) => {
+                return res.render('feedback.njk', {
+                    data,
+                    class: clazz,
+                    tute
+                });
             });
 
-            return res.render('feedback_success.njk', {
-                data,
-                class: clazz,
-                tute
+            app.post(endpoint, async (req, res) => {
+                req.body.share = req.body.share === 'on';
+
+                const date = new Date().toISOString()
+                    .replace(/T/, '_')
+                    .replace(/\..+/, '');
+
+                const name = `${sessionName}.${clazz.name}.${tute.week}-${date}`;
+
+                fs.writeFile(`./feedback/${name}.json`, JSON.stringify(req.body, null, 4), () => {
+                    console.log(`Received new feedback at ${date}`);
+                });
+
+                return res.render('feedback_success.njk', {
+                    data,
+                    class: clazz,
+                    tute,
+                    session: sessionName
+                });
             });
-        });
-    })
+        })
+    });
 });
 
 app.listen(port, () => console.log(`teach-web listening at http://localhost:${port}`));

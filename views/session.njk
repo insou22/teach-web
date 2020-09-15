@@ -1,0 +1,36 @@
+{% extends "base.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/index.css">
+{% endblock %}
+
+{% block content %}
+  <div class="title-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">COMP1521 {{ year + 'T' + term }}</h1>
+  <p class="lead">A collection of tutorial resources, polls, and feedback for students of Zac.</p>
+</div>
+
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    {% for class in classes %}
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">{{ class.name }}</h4>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title class-card-title">{{ class.duration }}</h3>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>{{ class.enrolment.current }} / {{ class.enrolment.max }} currently enrolled</li>
+            <li>Assistant: {{ class.assistant }}</li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-block btn-primary" onclick="location.href='/{{ year + 'T' + term }}/{{ class.name }}'">Go!</button>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row"></div>
+  </footer>
+</div>
+{% endblock %}

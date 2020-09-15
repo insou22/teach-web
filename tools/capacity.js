@@ -7,13 +7,13 @@ const cache = new NodeCache({
     stdTTL: 600
 });
 
-const getCapacity = async (classNum) => {
+const getCapacity = async (term, classNum) => {
     const cached = cache.get(`${classNum}`);
     if (cached) {
         return cached['COMP1521'][`${classNum}`];
     }
 
-    const avail = await classutil.checkAvailability('COMP', 2);
+    const avail = await classutil.checkAvailability('COMP', term);
 
     if (!avail) {
         return null;

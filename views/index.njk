@@ -6,24 +6,25 @@
 
 {% block content %}
   <div class="title-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">COMP1521 20T2</h1>
+  <h1 class="display-4">COMP1521</h1>
   <p class="lead">A collection of tutorial resources, polls, and feedback for students of Zac.</p>
 </div>
 
 <div class="container">
   <div class="card-deck mb-3 text-center">
-    {% for class in data.classes %}
+    {% for session in data.sessions %}
     <div class="card mb-4 shadow-sm">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">{{ class.name }}</h4>
+        <h4 class="my-0 font-weight-normal">{{ session.year + 'T' + session.term }}</h4>
       </div>
       <div class="card-body">
-        <h3 class="card-title class-card-title">{{ class.duration }}</h3>
+        {# <h3 class="card-title class-card-title">{{ session.classes.length }} class{% if session.classes.length != 1 %}es{% endif %}</h3> #}
         <ul class="list-unstyled mt-3 mb-4">
-          <li>{{ class.enrolment.current }} / {{ class.enrolment.max }} currently enrolled</li>
-          <li>Assistant: {{ class.assistant }}</li>
+          {% for class in session.classes %}
+            <li><b>{{ class.name }}</b> with {{ class.assistant_short }}</li>
+          {% endfor %}
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary" onclick="location.href='/{{ class.name }}'">Go!</button>
+        <button type="button" class="btn btn-lg btn-block btn-primary flex-bottom" onclick="location.href='/{{ session.year + 'T' + session.term }}'">Go!</button>
       </div>
     </div>
     {% endfor %}

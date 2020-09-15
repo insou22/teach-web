@@ -1,355 +1,383 @@
 {
-    "classes": [
+    "sessions": [
         {
-            "name": "mon11b",
-            "short": "m11b",
-            "classNum": 8993,
-            "duration": "Monday 11:00am - 2:00pm",
-            "assistant": "Dong Huang",
-            "assistant_short": "Dong",
-            "tutorials": [
+            "year": 20,
+            "term": 2,
+            "classes": [
                 {
-                    "week": 1,
-                    "topic": "No content!",
-                    "complete": true,
-                    "files": [
+                    "name": "mon11b",
+                    "short": "m11b",
+                    "classNum": 8993,
+                    "duration": "Monday 11:00am - 2:00pm",
+                    "assistant": "Dong Huang",
+                    "assistant_short": "Dong",
+                    "tutorials": [
                         {
-                            "name": "hello.c",
-                            "description": "A placeholder file for testing"
+                            "week": 1,
+                            "topic": "No content!",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "hello.c",
+                                    "description": "A placeholder file for testing"
+                                }
+                            ]
+                        },
+                        {
+                            "week": 2,
+                            "topic": "Bitwise Operations",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "agenda.md",
+                                    "description": "The agenda for the tutorial"
+                                },
+                                {
+                                    "name": "numbers.c",
+                                    "description": "Code for doing bitwise operations and changing bases in C"
+                                },
+                                {
+                                    "name": "sixteen_in.c",
+                                    "description": "Some thoughts for getting started on sixteen_in.c"
+                                }
+                            ]
+                        },
+                        {
+                            "week": 3,
+                            "topic": "Floating Points (IEEE-754)",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "negative.c",
+                                    "description": "Playing around with two's complement numbers"
+                                },
+                                {
+                                    "name": "six_middle_bits.c",
+                                    "description": "Extracting the six middle bits from a number"
+                                },
+                                {
+                                    "name": "union.c",
+                                    "description": "Differences between unions and structs"
+                                }
+                            ]
+                        },
+                        {
+                            "week": 4,
+                            "topic": "Basic MIPS",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "squared.c",
+                                    "description": "Square a given number in C"
+                                },
+                                {
+                                    "name": "squared.s",
+                                    "description": "Square a given number in MIPS"
+                                },
+                                {
+                                    "name": "size.c",
+                                    "description": "Tell whether a number is small, medium, or large in C"
+                                },
+                                {
+                                    "name": "size.s",
+                                    "description": "Tell whether a number is small, medium, or large in MIPS"
+                                },
+                                {
+                                    "name": "resources.txt",
+                                    "description": "Lots of URLs to various MIPS resources"
+                                }
+                            ]
+                        },
+                        {
+                            "week": 5,
+                            "topic": "More on MIPS",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "q1_2.pdf",
+                                    "description": "Document covering q1 and q2 in tute (and a bit of endianness in q3)"
+                                },
+                                {
+                                    "name": "numbers.s",
+                                    "description": "Arrays and loops in MIPS"
+                                },
+                                {
+                                    "name": "numbers_42.s",
+                                    "description": "More advanced arrays / looping in MIPS"
+                                }
+                            ]
+                        },
+                        {
+                            "week": 7,
+                            "topic": "Advanced MIPS",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "fib.c",
+                                    "description": "A simplified C program to calculate the n'th number in the fibonacci sequence."
+                                },
+                                {
+                                    "name": "fib.s",
+                                    "description": "A translation of fib.c to MIPS, with stackframes."
+                                },
+                                {
+                                    "name": "flag.c",
+                                    "description": "A C program to print a flag."
+                                },
+                                {
+                                    "name": "flag_1d.c",
+                                    "description": "flag.c -- 2D array changed to 1D."
+                                },
+                                {
+                                    "name": "flag_1d_simple.c",
+                                    "description": "flag_1d.c -- for loops simplified into if/goto."
+                                },
+                                {
+                                    "name": "flag.s",
+                                    "description": "flag.c translated into MIPS (using flag_1d_simple.c)."
+                                }
+                            ]
+                        },
+                        {
+                            "week": 8,
+                            "topic": "Files in C",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "first_line.c",
+                                    "description": "A C program to read the first line of a file."
+                                },
+                                {
+                                    "name": "append_line.c",
+                                    "description": "A C program to append an inputted line to a file."
+                                },
+                                {
+                                    "name": "fopen_to_read.txt",
+                                    "description": "Changing fopen calls to open calls."
+                                },
+                                {
+                                    "name": "lseek.txt",
+                                    "description": "Playing around with lseek."
+                                }
+                            ]
+                        },
+                        {
+                            "week": 9,
+                            "topic": "Asst2 + UNIX File System + Stat",
+                            "complete": true,
+                            "files": []
+                        },
+                        {
+                            "week": 10,
+                            "topic": "Virtual memory + Environment variables",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "print_diary.c",
+                                    "description": "Use the $HOME environment variable to print the contents of $HOME/.diary"
+                                },
+                                {
+                                    "name": "print_file_bits.c",
+                                    "description": "Print the least significant byte for files in asst2 hex format"
+                                },
+                                {
+                                    "name": "42.hex",
+                                    "description": "Test hex file for print_file_bits.c"
+                                },
+                                {
+                                    "name": "how_much_mem.c",
+                                    "description": "Printing the address of a value on the stack to see roughly how much virtual memory is available."
+                                },
+                                {
+                                    "name": "q4.txt",
+                                    "description": "Question 4 of the tutorial - simulating LRU page replacement by hand"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "week": 2,
-                    "topic": "Bitwise Operations",
-                    "complete": true,
-                    "files": [
+                    "name": "thu11b",
+                    "short": "h11b",
+                    "classNum": 8987,
+                    "duration": "Thursday 11:00am - 2:00pm",
+                    "assistant": "Grace Liu",
+                    "assistant_short": "Grace",
+                    "tutorials": [
                         {
-                            "name": "agenda.md",
-                            "description": "The agenda for the tutorial"
+                            "week": 1,
+                            "topic": "No content!",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "hello.c",
+                                    "description": "A placeholder file for testing"
+                                }
+                            ]
                         },
                         {
-                            "name": "numbers.c",
-                            "description": "Code for doing bitwise operations and changing bases in C"
+                            "week": 2,
+                            "topic": "Bitwise Operations",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "agenda.md",
+                                    "description": "The agenda for the tutorial"
+                                },
+                                {
+                                    "name": "bits.c",
+                                    "description": "Looking at working with individual bits"
+                                },
+                                {
+                                    "name": "masks.c",
+                                    "description": "Working with bitmasks - tut question 4"
+                                }
+                            ]
                         },
                         {
-                            "name": "sixteen_in.c",
-                            "description": "Some thoughts for getting started on sixteen_in.c"
-                        }
-                    ]
-                },
-                {
-                    "week": 3,
-                    "topic": "Floating Points (IEEE-754)",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "negative.c",
-                            "description": "Playing around with two's complement numbers"
+                            "week": 3,
+                            "topic": "Floating Points (IEEE-754)",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "twoscomplement.c",
+                                    "description": "Playing around with two's complement numbers"
+                                },
+                                {
+                                    "name": "union.c",
+                                    "description": "Differences between unions and structs"
+                                },
+                                {
+                                    "name": "six_middle_bits.c",
+                                    "description": "Extracting the six middle bits from a number"
+                                }
+                            ]
                         },
                         {
-                            "name": "six_middle_bits.c",
-                            "description": "Extracting the six middle bits from a number"
+                            "week": 4,
+                            "topic": "Basic MIPS",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "squared.c",
+                                    "description": "Square a given number in C"
+                                },
+                                {
+                                    "name": "squared.s",
+                                    "description": "Square a given number in MIPS"
+                                },
+                                {
+                                    "name": "big_small.c",
+                                    "description": "Tell whether a number is small, medium, or large in C"
+                                },
+                                {
+                                    "name": "big_small.s",
+                                    "description": "Tell whether a number is small, medium, or large in MIPS"
+                                },
+                                {
+                                    "name": "resources.txt",
+                                    "description": "Lots of URLs to various MIPS resources"
+                                }
+                            ]
                         },
                         {
-                            "name": "union.c",
-                            "description": "Differences between unions and structs"
-                        }
-                    ]
-                },
-                {
-                    "week": 4,
-                    "topic": "Basic MIPS",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "squared.c",
-                            "description": "Square a given number in C"
+                            "week": 5,
+                            "topic": "More on MIPS",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "q1_3.pdf",
+                                    "description": "Document covering q1 and q3 in tute"
+                                },
+                                {
+                                    "name": "fib.s",
+                                    "description": "Fibonacci with stack frames in MIPS"
+                                }
+                            ]
                         },
                         {
-                            "name": "squared.s",
-                            "description": "Square a given number in MIPS"
+                            "week": 8,
+                            "topic": "Files in C",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "files.c",
+                                    "description": "A C program to read a file 4 bytes at a time (with open / read)."
+                                },
+                                {
+                                    "name": "first_line.c",
+                                    "description": "A C program to read the first line of a file (with fopen / fgetc)."
+                                },
+                                {
+                                    "name": "write_line.c",
+                                    "description": "A C program to write an inputted line to a file."
+                                },
+                                {
+                                    "name": "seeking_around.txt",
+                                    "description": "Playing around with lseek."
+                                },
+                                {
+                                    "name": "strange_print.c",
+                                    "description": "Testing printing with ASCII values."
+                                },
+                                {
+                                    "name": "unique_fp.c",
+                                    "description": "Testing if two fopen's give unique file descriptors."
+                                },
+                                {
+                                    "name": "dodgy.c",
+                                    "description": "Very dodgily finding the file descriptor inside a FILE * struct (use gcc)."
+                                }
+                            ]
                         },
                         {
-                            "name": "size.c",
-                            "description": "Tell whether a number is small, medium, or large in C"
-                        },
-                        {
-                            "name": "size.s",
-                            "description": "Tell whether a number is small, medium, or large in MIPS"
-                        },
-                        {
-                            "name": "resources.txt",
-                            "description": "Lots of URLs to various MIPS resources"
-                        }
-                    ]
-                },
-                {
-                    "week": 5,
-                    "topic": "More on MIPS",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "q1_2.pdf",
-                            "description": "Document covering q1 and q2 in tute (and a bit of endianness in q3)"
-                        },
-                        {
-                            "name": "numbers.s",
-                            "description": "Arrays and loops in MIPS"
-                        },
-                        {
-                            "name": "numbers_42.s",
-                            "description": "More advanced arrays / looping in MIPS"
-                        }
-                    ]
-                },
-                {
-                    "week": 7,
-                    "topic": "Advanced MIPS",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "fib.c",
-                            "description": "A simplified C program to calculate the n'th number in the fibonacci sequence."
-                        },
-                        {
-                            "name": "fib.s",
-                            "description": "A translation of fib.c to MIPS, with stackframes."
-                        },
-                        {
-                            "name": "flag.c",
-                            "description": "A C program to print a flag."
-                        },
-                        {
-                            "name": "flag_1d.c",
-                            "description": "flag.c -- 2D array changed to 1D."
-                        },
-                        {
-                            "name": "flag_1d_simple.c",
-                            "description": "flag_1d.c -- for loops simplified into if/goto."
-                        },
-                        {
-                            "name": "flag.s",
-                            "description": "flag.c translated into MIPS (using flag_1d_simple.c)."
-                        }
-                    ]
-                },
-                {
-                    "week": 8,
-                    "topic": "Files in C",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "first_line.c",
-                            "description": "A C program to read the first line of a file."
-                        },
-                        {
-                            "name": "append_line.c",
-                            "description": "A C program to append an inputted line to a file."
-                        },
-                        {
-                            "name": "fopen_to_read.txt",
-                            "description": "Changing fopen calls to open calls."
-                        },
-                        {
-                            "name": "lseek.txt",
-                            "description": "Playing around with lseek."
-                        }
-                    ]
-                },
-                {
-                    "week": 9,
-                    "topic": "Asst2 + UNIX File System + Stat",
-                    "complete": true,
-                    "files": []
-                },
-                {
-                    "week": 10,
-                    "topic": "Virtual memory + Environment variables",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "print_diary.c",
-                            "description": "Use the $HOME environment variable to print the contents of $HOME/.diary"
-                        },
-                        {
-                            "name": "print_file_bits.c",
-                            "description": "Print the least significant byte for files in asst2 hex format"
-                        },
-                        {
-                            "name": "42.hex",
-                            "description": "Test hex file for print_file_bits.c"
-                        },
-                        {
-                            "name": "how_much_mem.c",
-                            "description": "Printing the address of a value on the stack to see roughly how much virtual memory is available."
-                        },
-                        {
-                            "name": "q4.txt",
-                            "description": "Question 4 of the tutorial - simulating LRU page replacement by hand"
+                            "week": 10,
+                            "topic": "Virtual memory + Environment variables",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "print_diary.c",
+                                    "description": "Use the $HOME environment variable to print the contents of $HOME/.diary"
+                                },
+                                {
+                                    "name": "print_file_bits.c",
+                                    "description": "Print the least significant byte for files in asst2 hex format"
+                                },
+                                {
+                                    "name": "triangle.hex",
+                                    "description": "Test hex file for print_file_bits.c"
+                                },
+                                {
+                                    "name": "estimate_vaddr_space.c",
+                                    "description": "Printing the address of a value on the stack to estimate how much virtual memory is available."
+                                },
+                                {
+                                    "name": "access_lru.txt",
+                                    "description": "Question 4 of the tutorial - simulating LRU page replacement by hand"
+                                }
+                            ]
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "thu11b",
-            "short": "h11b",
-            "classNum": 8987,
-            "duration": "Thursday 11:00am - 2:00pm",
-            "assistant": "Grace Liu",
-            "assistant_short": "Grace",
-            "tutorials": [
+            "year": 20,
+            "term": 3,
+            "classes": [
                 {
-                    "week": 1,
-                    "topic": "No content!",
-                    "complete": true,
-                    "files": [
+                    "name": "wed17a",
+                    "short": "w17a",
+                    "classNum": 8904,
+                    "duration": "Wednesday 5:00pm - 8:00pm",
+                    "assistant": "Brandon Nguyen",
+                    "assistant_short": "Brandon",
+                    "tutorials": [
                         {
-                            "name": "hello.c",
-                            "description": "A placeholder file for testing"
-                        }
-                    ]
-                },
-                {
-                    "week": 2,
-                    "topic": "Bitwise Operations",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "agenda.md",
-                            "description": "The agenda for the tutorial"
-                        },
-                        {
-                            "name": "bits.c",
-                            "description": "Looking at working with individual bits"
-                        },
-                        {
-                            "name": "masks.c",
-                            "description": "Working with bitmasks - tut question 4"
-                        }
-                    ]
-                },
-                {
-                    "week": 3,
-                    "topic": "Floating Points (IEEE-754)",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "twoscomplement.c",
-                            "description": "Playing around with two's complement numbers"
-                        },
-                        {
-                            "name": "union.c",
-                            "description": "Differences between unions and structs"
-                        },
-                        {
-                            "name": "six_middle_bits.c",
-                            "description": "Extracting the six middle bits from a number"
-                        }
-                    ]
-                },
-                {
-                    "week": 4,
-                    "topic": "Basic MIPS",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "squared.c",
-                            "description": "Square a given number in C"
-                        },
-                        {
-                            "name": "squared.s",
-                            "description": "Square a given number in MIPS"
-                        },
-                        {
-                            "name": "big_small.c",
-                            "description": "Tell whether a number is small, medium, or large in C"
-                        },
-                        {
-                            "name": "big_small.s",
-                            "description": "Tell whether a number is small, medium, or large in MIPS"
-                        },
-                        {
-                            "name": "resources.txt",
-                            "description": "Lots of URLs to various MIPS resources"
-                        }
-                    ]
-                },
-                {
-                    "week": 5,
-                    "topic": "More on MIPS",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "q1_3.pdf",
-                            "description": "Document covering q1 and q3 in tute"
-                        },
-                        {
-                            "name": "fib.s",
-                            "description": "Fibonacci with stack frames in MIPS"
-                        }
-                    ]
-                },
-                {
-                    "week": 8,
-                    "topic": "Files in C",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "files.c",
-                            "description": "A C program to read a file 4 bytes at a time (with open / read)."
-                        },
-                        {
-                            "name": "first_line.c",
-                            "description": "A C program to read the first line of a file (with fopen / fgetc)."
-                        },
-                        {
-                            "name": "write_line.c",
-                            "description": "A C program to write an inputted line to a file."
-                        },
-                        {
-                            "name": "seeking_around.txt",
-                            "description": "Playing around with lseek."
-                        },
-                        {
-                            "name": "strange_print.c",
-                            "description": "Testing printing with ASCII values."
-                        },
-                        {
-                            "name": "unique_fp.c",
-                            "description": "Testing if two fopen's give unique file descriptors."
-                        },
-                        {
-                            "name": "dodgy.c",
-                            "description": "Very dodgily finding the file descriptor inside a FILE * struct (use gcc)."
-                        }
-                    ]
-                },
-                {
-                    "week": 10,
-                    "topic": "Virtual memory + Environment variables",
-                    "complete": true,
-                    "files": [
-                        {
-                            "name": "print_diary.c",
-                            "description": "Use the $HOME environment variable to print the contents of $HOME/.diary"
-                        },
-                        {
-                            "name": "print_file_bits.c",
-                            "description": "Print the least significant byte for files in asst2 hex format"
-                        },
-                        {
-                            "name": "triangle.hex",
-                            "description": "Test hex file for print_file_bits.c"
-                        },
-                        {
-                            "name": "estimate_vaddr_space.c",
-                            "description": "Printing the address of a value on the stack to estimate how much virtual memory is available."
-                        },
-                        {
-                            "name": "access_lru.txt",
-                            "description": "Question 4 of the tutorial - simulating LRU page replacement by hand"
+                            "week": 1,
+                            "topic": "C Revision",
+                            "complete": true,
+                            "files": []
                         }
                     ]
                 }
