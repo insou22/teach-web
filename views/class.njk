@@ -37,7 +37,7 @@
       {% endif %}
       </ul>
       
-      {% if tute.complete %}
+      {% if tute.complete and sessionCurrent %}
       <a href="/{{ session }}/{{ class.name }}/feedback/{{ tute.week }}" class="btn btn-primary">Give feedback!</a>
       {% endif %}
     </div>

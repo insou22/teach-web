@@ -3,6 +3,7 @@
         {
             "year": 20,
             "term": 2,
+            "current": false,
             "classes": [
                 {
                     "name": "mon11b",
@@ -364,6 +365,7 @@
         {
             "year": 20,
             "term": 3,
+            "current": true,
             "classes": [
                 {
                     "name": "wed17a",
@@ -376,7 +378,55 @@
                         {
                             "week": 1,
                             "topic": "C Revision",
-                            "complete": true,
+                            "complete": false,
+                            "files": []
+                        },
+                        {
+                            "week": 2,
+                            "topic": "Bitwise Operations",
+                            "complete": false,
+                            "files": []
+                        },
+                        {
+                            "week": 3,
+                            "topic": "Floating Points (IEEE-754)",
+                            "complete": false,
+                            "files": []
+                        },
+                        {
+                            "week": 4,
+                            "topic": "Basic MIPS",
+                            "complete": false,
+                            "files": []
+                        },
+                        {
+                            "week": 5,
+                            "topic": "More on MIPS",
+                            "complete": false,
+                            "files": []
+                        },
+                        {
+                            "week": 6,
+                            "topic": "!! Flexibility Week !!",
+                            "complete": false,
+                            "files": []
+                        },
+                        {
+                            "week": 7,
+                            "topic": "Advanced MIPS",
+                            "complete": false,
+                            "files": []
+                        },
+                        {
+                            "week": 8,
+                            "topic": "Files in C",
+                            "complete": false,
+                            "files": []
+                        },
+                        {
+                            "week": 10,
+                            "topic": "Virtual memory + Environment variables",
+                            "complete": false,
                             "files": []
                         }
                     ]
