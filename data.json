@@ -379,7 +379,16 @@
                             "week": 1,
                             "topic": "C Revision",
                             "complete": false,
-                            "files": []
+                            "files": [
+								{
+									"name": "hi.c",
+									"description": "Why does this program crash?"
+								},
+								{
+									"name": "fib.c",
+									"description": "Iterative vs recursive definition of fibonacci function."
+								}
+							]
                         },
                         {
                             "week": 2,
