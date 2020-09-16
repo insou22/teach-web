@@ -378,7 +378,7 @@
                         {
                             "week": 1,
                             "topic": "C Revision",
-                            "complete": false,
+                            "complete": true,
                             "files": [
 								{
 									"name": "hi.c",
