@@ -393,8 +393,29 @@
                         {
                             "week": 2,
                             "topic": "Bitwise Operations",
-                            "complete": false,
-                            "files": []
+                            "complete": true,
+                            "files": [
+                                {
+									"name": "schedule.c",
+									"description": "The week 2 tutorial schedule"
+                                },
+                                {
+									"name": "sixteen_out.c",
+									"description": "Getting started on sixteen_out.c"
+                                },
+                                {
+									"name": "reverse_bits.c",
+									"description": "The reverse bits tutorial exercise"
+                                },
+                                {
+									"name": "reverse_quads.c",
+									"description": "An exercise for you! Give it a go before looking at reverse_quads_soln.c"
+								},
+                                {
+									"name": "reverse_quads_soln.c",
+									"description": "Sample solution for reverse_quads.c. Don't look before trying yourself!"
+								}
+                            ]
                         },
                         {
                             "week": 3,
