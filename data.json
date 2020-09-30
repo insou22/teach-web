@@ -420,8 +420,22 @@
                         {
                             "week": 3,
                             "topic": "Floating Points (IEEE-754)",
-                            "complete": false,
-                            "files": []
+                            "complete": true,
+                            "files": [
+								{
+									"name": "six_middle_bits.c",
+									"description": "Extract the six middle bits from a given uint32_t"
+								},
+								{
+									"name": "union_size.c",
+									"description": "Finding out the size of strange unions in C"
+								},
+								{
+									"name": "union_values.c",
+									"description": "Finding out the values in different fields of unions in C"
+								}
+
+							]
                         },
                         {
                             "week": 4,
