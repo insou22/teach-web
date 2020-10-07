@@ -449,7 +449,8 @@
 								{
 									"name": "small_big.s",
 									"description": "MIPS program to determine if a number is small/big, or medium"
-								}
+                                }
+                            ]
                         },
                         {
                             "week": 5,
