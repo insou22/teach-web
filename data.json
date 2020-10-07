@@ -440,8 +440,16 @@
                         {
                             "week": 4,
                             "topic": "Basic MIPS",
-                            "complete": false,
-                            "files": []
+                            "complete": true,
+                            "files": [
+								{
+									"name": "square.s",
+									"description": "MIPS program to square an input number"
+								},
+								{
+									"name": "small_big.s",
+									"description": "MIPS program to determine if a number is small/big, or medium"
+								}
                         },
                         {
                             "week": 5,
