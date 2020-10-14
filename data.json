@@ -454,9 +454,14 @@
                         },
                         {
                             "week": 5,
-                            "topic": "More on MIPS",
-                            "complete": false,
-                            "files": []
+                            "topic": "Assignment 1 + More on MIPS",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "q5.s",
+                                    "description": "MIPS solution to tutorial question 5"
+                                }
+                            ]
                         },
                         {
                             "week": 6,
