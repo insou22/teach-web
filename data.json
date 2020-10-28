@@ -472,8 +472,29 @@
                         {
                             "week": 7,
                             "topic": "Advanced MIPS",
-                            "complete": false,
-                            "files": []
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "flag.c",
+                                    "description": "Simplified C to print a flag"
+                                },
+                                {
+                                    "name": "flag.s",
+                                    "description": "MIPS translation of flag.c"
+                                },
+                                {
+                                    "name": "sum4.c",
+                                    "description": "C code that adds some numbers together with functions"
+                                },
+                                {
+                                    "name": "sum4.s",
+                                    "description": "MIPS translation of sum4.c with calling"
+                                },
+                                {
+                                    "name": "s_or_t_register_flow_chart.png",
+                                    "description": "MIPS flowchart to decide whether to use a T register or an S register"
+                                }
+                            ]
                         },
                         {
                             "week": 8,
