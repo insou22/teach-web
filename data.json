@@ -493,6 +493,10 @@
                                 {
                                     "name": "s_or_t_register_flow_chart.png",
                                     "description": "MIPS flowchart to decide whether to use a T register or an S register"
+                                },
+                                {
+                                    "name": "why_save_ra.mp4",
+                                    "description": "Quick video on when, why, and how to save the $ra register"
                                 }
                             ]
                         },
