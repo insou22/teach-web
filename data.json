@@ -380,15 +380,15 @@
                             "topic": "C Revision",
                             "complete": true,
                             "files": [
-								{
-									"name": "hi.c",
-									"description": "Why does this program crash?"
-								},
-								{
-									"name": "fib.c",
-									"description": "Iterative vs recursive definition of fibonacci function."
-								}
-							]
+                                {
+                                    "name": "hi.c",
+                                    "description": "Why does this program crash?"
+                                },
+                                {
+                                    "name": "fib.c",
+                                    "description": "Iterative vs recursive definition of fibonacci function."
+                                }
+                            ]
                         },
                         {
                             "week": 2,
@@ -396,25 +396,25 @@
                             "complete": true,
                             "files": [
                                 {
-									"name": "schedule.c",
-									"description": "The week 2 tutorial schedule"
+                                    "name": "schedule.c",
+                                    "description": "The week 2 tutorial schedule"
                                 },
                                 {
-									"name": "sixteen_out.c",
-									"description": "Getting started on sixteen_out.c"
+                                    "name": "sixteen_out.c",
+                                    "description": "Getting started on sixteen_out.c"
                                 },
                                 {
-									"name": "reverse_bits.c",
-									"description": "The reverse bits tutorial exercise"
+                                    "name": "reverse_bits.c",
+                                    "description": "The reverse bits tutorial exercise"
                                 },
                                 {
-									"name": "reverse_quads.c",
-									"description": "An exercise for you! Give it a go before looking at reverse_quads_soln.c"
-								},
+                                    "name": "reverse_quads.c",
+                                    "description": "An exercise for you! Give it a go before looking at reverse_quads_soln.c"
+                                },
                                 {
-									"name": "reverse_quads_soln.c",
-									"description": "Sample solution for reverse_quads.c. Don't look before trying yourself!"
-								}
+                                    "name": "reverse_quads_soln.c",
+                                    "description": "Sample solution for reverse_quads.c. Don't look before trying yourself!"
+                                }
                             ]
                         },
                         {
@@ -422,33 +422,33 @@
                             "topic": "Floating Points (IEEE-754)",
                             "complete": true,
                             "files": [
-								{
-									"name": "six_middle_bits.c",
-									"description": "Extract the six middle bits from a given uint32_t"
-								},
-								{
-									"name": "union_size.c",
-									"description": "Finding out the size of strange unions in C"
-								},
-								{
-									"name": "union_values.c",
-									"description": "Finding out the values in different fields of unions in C"
-								}
+                                {
+                                    "name": "six_middle_bits.c",
+                                    "description": "Extract the six middle bits from a given uint32_t"
+                                },
+                                {
+                                    "name": "union_size.c",
+                                    "description": "Finding out the size of strange unions in C"
+                                },
+                                {
+                                    "name": "union_values.c",
+                                    "description": "Finding out the values in different fields of unions in C"
+                                }
 
-							]
+                            ]
                         },
                         {
                             "week": 4,
                             "topic": "Basic MIPS",
                             "complete": true,
                             "files": [
-								{
-									"name": "square.s",
-									"description": "MIPS program to square an input number"
-								},
-								{
-									"name": "small_big.s",
-									"description": "MIPS program to determine if a number is small/big, or medium"
+                                {
+                                    "name": "square.s",
+                                    "description": "MIPS program to square an input number"
+                                },
+                                {
+                                    "name": "small_big.s",
+                                    "description": "MIPS program to determine if a number is small/big, or medium"
                                 }
                             ]
                         },
