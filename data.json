@@ -504,7 +504,24 @@
                             "week": 8,
                             "topic": "Files in C",
                             "complete": false,
-                            "files": []
+                            "files": [
+                                {
+                                    "name": "first_line.c",
+                                    "description": "Reads the first line from a file"
+                                },
+                                {
+                                    "name": "write_line.c",
+                                    "description": "Write a given line to a specified file (WARNING - will overwrite the file you specify)"
+                                },
+                                {
+                                    "name": "append_line.c",
+                                    "description": "Append a given line to a specified file"
+                                },
+                                {
+                                    "name": "print_borts_file.c",
+                                    "description": "Print the contents of a file of borts"
+                                }
+                            ]
                         },
                         {
                             "week": 10,
