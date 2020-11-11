@@ -524,6 +524,21 @@
                             ]
                         },
                         {
+                            "week": 9,
+                            "topic": "Files metadata",
+                            "complete": true,
+                            "files": [
+                                {
+                                    "name": "chmod_if_public_write.c",
+                                    "description": "Makes any inputted files no longer publically writeable"
+                                },
+                                {
+                                    "name": "fgrep.c",
+                                    "description": "Searches for text within specified files or stdin otherwise"
+                                }
+                            ]
+                        },
+                        {
                             "week": 10,
                             "topic": "Virtual memory + Environment variables",
                             "complete": false,
