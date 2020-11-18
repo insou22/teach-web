@@ -542,7 +542,16 @@
                             "week": 10,
                             "topic": "Virtual memory + Environment variables",
                             "complete": false,
-                            "files": []
+                            "files": [
+                                {
+                                    "name": "print_diary.c",
+                                    "description": "Prints the contents of $HOME/.diary using getenv()"
+                                },
+                                {
+                                    "name": "addr_space.c",
+                                    "description": "Where do different things live in a virtual address space?"
+                                }
+                            ]
                         }
                     ]
                 }
