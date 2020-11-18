@@ -541,7 +541,7 @@
                         {
                             "week": 10,
                             "topic": "Virtual memory + Environment variables",
-                            "complete": false,
+                            "complete": true,
                             "files": [
                                 {
                                     "name": "print_diary.c",
